@@ -1,0 +1,39 @@
+#header {
+    background-color: #DAED49;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1920px;
+    height: 95px;
+}
+
+#header-blue {
+    background-color: #00BDD4;
+    position: absolute;
+    top: 0px;
+    left: 981px;
+    width: 939px;
+    height: 95px;
+}
+
+#header-text {
+    position: absolute;
+    left: 65px;
+    top: 24px;
+    text-align: center;
+    width: 238px;
+    height: 48px;
+    font-family: Lato;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.arrow-up {
+    position: absolute;
+    left: 926px;
+    width: 0;
+    height: 0px; 
+    border-left: 55px solid transparent;
+    border-right: 55px solid transparent;
+    border-bottom: 95px solid #00BDD4;
+  }
