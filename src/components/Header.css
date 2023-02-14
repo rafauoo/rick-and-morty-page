@@ -1,6 +1,6 @@
 #header {
     background-color: #DAED49;
-    position: sticky;
+    position: absolute;
     max-width: 1920px;
     width: 100%;
     height: 95px;
@@ -18,7 +18,7 @@
     position: absolute;
     top: 0px;
     left: 981px;
-    width: 100%;
+    width: calc(100% - 981px);
     max-width: 939px;
     height: 95px;
 }
