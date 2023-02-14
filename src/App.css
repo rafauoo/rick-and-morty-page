@@ -6,5 +6,10 @@
     overflow-x:auto;
     position: relative;
 }
+@media only screen and (max-width: 900px) {
+    #App {
+        height: 2062px;
+    }
+}
 
 * { margin: 0; padding: 0;}

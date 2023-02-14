@@ -8,6 +8,12 @@
     height: 32px;
     list-style-type: none;
 }
+@media only screen and (max-width: 900px) {
+    .episodes {
+        margin-top: 96px;
+        font-size: 18px;
+    }
+}
 
 .name {
     margin-top: 74px;
@@ -22,17 +28,32 @@
 .name:nth-child(even) {
     color: #BDD800;
 }
+@media only screen and (max-width: 900px) {
+    .name {
+        margin-top: 66px;
+        height: 62px;
+        width: 346px;
+        font-size: 18px;
+    }
+}
 
 .air_date {
     margin-top: 82px;
     text-align: left;
     height: 24px;
-    width: 177px;
+    max-width: 300px;
     font-family: Lato;
     color: #959595;
     font-size: 20px;
     font-weight: 700;
     list-style-type: none;
+}
+@media only screen and (max-width: 900px) {
+    .air_date {
+        margin-top: 110px;
+        height: 18px;
+        font-size: 15px;
+    }
 }
 
 #episodes-list {
@@ -41,10 +62,23 @@
     top: calc(231px - 74px);
 }
 
+@media only screen and (max-width: 900px) {
+    #episodes-list {
+        top: calc(703px - 96px);
+        left: 25px;
+    }
+}
+
 #names-list {
     position: absolute;
     left: 1186px;
     top: calc(231px - 74px);
+}
+@media only screen and (max-width: 900px) {
+    #names-list {
+        top: calc(738px - 66px);
+        left: 25px;
+    }
 }
 
 #air-dates-list {
@@ -52,11 +86,45 @@
     left: 1186px;
     top: calc(276px - 82px);
 }
+@media only screen and (max-width: 900px) {
+    #air-dates-list {
+        top: calc(774px - 110px);
+        left: 25px;
+    }
+}
 
 #vl {
+    visibility: inherit;
     position: absolute;
     left: 1156.5px;
     top: 214.5px;
     border-left: 1px solid #D1D1D1;
     height: 1060px;
+}
+@media only screen and (max-width: 900px) {
+    #vl {
+        visibility: hidden;
+        left: 0px;
+    }
+}
+
+.horizontal-line {
+    width: 362px;
+    border-top: 1px solid #D1D1D1;
+    margin-top: 128px;
+    list-style-type: none;
+}
+
+#hlines {
+    position: absolute;
+    left: 0px;
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 900px) {
+    #hlines {
+        visibility: inherit;
+        left: 25.5px;
+        top: calc(813.5px - 128px);
+    }
 }
