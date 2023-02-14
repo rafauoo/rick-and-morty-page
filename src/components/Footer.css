@@ -1,0 +1,38 @@
+#footer {
+    background-color: #464646;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    max-width: 1920px;
+    height: 67.23px;
+}
+
+@media only screen and (max-width: 900px) { /* Screen which has a maximum width of 900px */
+
+    #footer {
+        height: 48.72px;
+    } 
+}
+
+#footer-text {
+    position: absolute;
+    left: calc(880/1920 * 100%);
+    width: calc(164/1920 * 100%);
+    bottom: 24px;
+    text-align: center;
+    color: #CCCCCC;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 900px) { /* Screen which has a maximum width of 900px */
+
+    #footer-text {
+        bottom: 15px;
+        left: calc(126/412 * 100%);
+        width: calc(143/412 * 100%);
+        font-size: 14px;
+    } 
+}

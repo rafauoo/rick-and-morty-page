@@ -1,7 +1,10 @@
 #App {
-    max-width:100%;
+    overflow: hidden;
+    height: 1489px;
+    width: 100%;
+    max-width: 1920px;
+    overflow-x:auto;
     position: relative;
-    scale: 1;
 }
 
 * { margin: 0; padding: 0;}
