@@ -1,0 +1,62 @@
+.episodes {
+    margin-top: 74px;
+    font-family: Lato;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: left;
+    width: 91px;
+    height: 32px;
+    list-style-type: none;
+}
+
+.name {
+    margin-top: 74px;
+    text-align: left;
+    font-family: Lato;
+    height: 32px;
+    color: #00BDD4;
+    font-size: 25px;
+    font-weight: 700;
+    list-style-type: none;
+}
+.name:nth-child(even) {
+    color: #BDD800;
+}
+
+.air_date {
+    margin-top: 82px;
+    text-align: left;
+    height: 24px;
+    width: 177px;
+    font-family: Lato;
+    color: #959595;
+    font-size: 20px;
+    font-weight: 700;
+    list-style-type: none;
+}
+
+#episodes-list {
+    position: absolute;
+    left: 1036px;
+    top: calc(231px - 74px);
+}
+
+#names-list {
+    position: absolute;
+    left: 1186px;
+    top: calc(231px - 74px);
+}
+
+#air-dates-list {
+    position: absolute;
+    left: 1186px;
+    top: calc(276px - 82px);
+}
+
+#vl {
+    position: absolute;
+    left: 1156.5px;
+    top: 214.5px;
+    border-left: 1px solid #D1D1D1;
+    height: 1060px;
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import './Body.css';
 import image from '../images/image.png'
+import EpisodesList from "./EpisodesList";
 
 function Body() {
         return (
@@ -11,6 +12,7 @@ function Body() {
                     <img src={image} alt="Rick And Morty" id="image"></img>
                 </div>
                 <div id="list">
+                    <EpisodesList />
                 </div>
             </body>
         )
