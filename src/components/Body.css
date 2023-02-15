@@ -1,0 +1,74 @@
+#body {
+    position: relative;
+    width: 100%;
+    height: 1421.77px;
+    max-width: 1920px;
+}
+@media only screen and (max-width: 900px) {
+    #body {
+        height: calc(2062px - 48.72px);
+    }
+}
+
+#cover {
+    position: relative;
+    width: 50%;
+    max-width: 960px;
+    float: left;
+}
+
+#list {
+    width: 50%;
+    max-width: 960px;
+    float: right;
+}
+
+#h1-text {
+    position: absolute;
+    left: 197px;
+    top: 215px;
+    width: 683px;
+    height: 230px;
+    font-family: Lato;
+    font-size: 60px;
+    font-weight: 400;
+}
+@media only screen and (max-width: 900px) {
+    #h1-text {
+        text-align: left;
+        top: 112px;
+        left: calc( 28/52 * (100vw - 360px));
+        font-size: 35px;
+        width: 360px;
+    }
+}
+
+#h1-4th {
+    font-weight: 700;
+}
+
+#h1-rickandmorty {
+    font-weight: 700;
+    font-size: 70px;
+    color: #00BDD4;
+}
+@media only screen and (max-width: 900px) {
+    #h1-rickandmorty {
+        font-size: 40px;
+    }
+}
+
+#image {
+    position: absolute;
+    left: 180px;
+    top: 484px;
+}
+@media only screen and (max-width: 900px) { /* Screen which has a maximum width of 900px */
+
+    #image {
+        height: auto;
+        width: 360px;
+        left: calc( 25/52 * (100vw - 360px));
+        top: 285px;
+    } 
+}
