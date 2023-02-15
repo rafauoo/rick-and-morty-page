@@ -1,21 +1,36 @@
 import React from "react";
 import './EpisodesList.css';
+import { useQuery, gql } from '@apollo/client';
+
+
+const GET_LOCATIONS = gql`
+query {
+    episodes(filter: {episode: "S04"}) {
+          results {
+            name
+        episode
+        air_date
+          }
+    }
+  }
+`;
 
 function EpisodesList() {
-    const numbers = ["S04E01", 2, 3, 4, 5, 6, 7, 8, 9, 10];
-    const listItems = numbers.map((number) =>
-    <li className="episodes">{number}</li>
+    const { loading, error, data } = useQuery(GET_LOCATIONS);
+    console.log("loading", loading);
+    console.log("error", error);
+    console.log(data);
+    const listItems = data?.episodes?.results?.map((result: any) =>
+    <li className="episodes">{result.episode}</li>
     );
-    const names = ["Edge of Tomorty: Rick, Die, Rickpeat", "BB", "CC", "DD", "EE", "FF", "GG", "HH", "II", "JJ"];
-    const names_list = names.map((number) =>
-    <li className="name">{number}</li>
+    const names_list = data?.episodes?.results?.map((result: any) =>
+    <li className="name">{result.name}</li>
     );
-    const air_dates = ["November 10, 2019", 2, 3, 4, 5, 6, 7, 8, 9, 10];
-    const air_dates_list = air_dates.map((number) =>
-    <li className="air_date">{number}</li>
+    const air_dates_list = data?.episodes?.results?.map((result: any) =>
+    <li className="air_date">{result.air_date}</li>
     );
     const hl = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-    const hl_list = hl.map((number) =>
+    const hl_list = hl.map(() =>
     <li className="horizontal-line"></li>
     );
         return (
