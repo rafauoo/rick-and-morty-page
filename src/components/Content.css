@@ -4,6 +4,11 @@
     height: 1421.77px;
     max-width: 1920px;
 }
+@media only screen and (max-width: 900px) {
+    #body {
+        height: calc(2062px - 48.72px);
+    }
+}
 
 #cover {
     position: relative;
