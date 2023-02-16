@@ -1,10 +1,10 @@
 import React from "react";
-import './Body.css';
+import './Content.css';
 import image from '../images/image.png'
 
-function Body() {
+function Content() {
         return (
-            <body id="body">
+            <div id="content">
                 <div id="cover">
                     <h1 id="h1-text">Episodes of the <span id="h1-4th">4th</span><br/>season 
                     of the series<br/><span id="h1-rickandmorty">Rick and Morty</span></h1>
@@ -12,8 +12,8 @@ function Body() {
                 </div>
                 <div id="list">
                 </div>
-            </body>
+            </div>
         )
 }
 
-export default Body;
+export default Content;
