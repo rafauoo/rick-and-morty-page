@@ -2,7 +2,7 @@ import React from "react";
 import './Header.css';
 
 function HeaderText() {
-    return <text id="header-text">LOREM</text>
+    return <span id="header-text">LOREM</span>
 }
 
 function Header() {
