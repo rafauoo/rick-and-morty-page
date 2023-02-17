@@ -4,6 +4,7 @@
     bottom: 0px;
     left: 0px;
     width: 100%;
+    min-width: 1686px;
     max-width: 1920px;
     height: 67.23px;
 }
@@ -11,14 +12,15 @@
 @media only screen and (max-width: 900px) { /* Screen which has a maximum width of 900px */
 
     #footer {
+        min-width: 0;
         height: 48.72px;
     } 
 }
 
 #footer-text {
     position: absolute;
-    left: calc(880/1920 * 100%);
-    width: calc(164/1920 * 100%);
+    left: calc(max(880/1756 * (100vw - 164px), 880/1756 * (1686px - 164px)));
+    width: 164px;
     bottom: 24px;
     text-align: center;
     color: #CCCCCC;

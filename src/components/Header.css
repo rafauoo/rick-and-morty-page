@@ -18,6 +18,7 @@
     position: absolute;
     top: 0px;
     left: 981px;
+    min-width: 705px;
     width: calc(100% - 981px);
     max-width: 939px;
     height: 95px;
@@ -25,6 +26,7 @@
 @media only screen and (max-width: 900px) { /* Screen which has a maximum width of 900px */
 
     #header-blue {
+        min-width: 0;
         width: 0;
     } 
 }

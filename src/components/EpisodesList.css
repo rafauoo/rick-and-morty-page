@@ -4,6 +4,7 @@
     font-size: 25px;
     font-weight: 700;
     text-align: left;
+    white-space: nowrap;
     width: 91px;
     height: 32px;
     list-style-type: none;
@@ -23,6 +24,7 @@
     color: #00BDD4;
     font-size: 25px;
     font-weight: 700;
+    white-space: nowrap;
     list-style-type: none;
 }
 .name:nth-child(even) {
@@ -44,6 +46,7 @@
     max-width: 300px;
     font-family: Lato;
     color: #959595;
+    white-space: nowrap;
     font-size: 20px;
     font-weight: 700;
     list-style-type: none;
