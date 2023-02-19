@@ -3,7 +3,7 @@ import './EpisodesList.css';
 import { useQuery, gql } from '@apollo/client';
 
 
-const GET_LOCATIONS = gql`
+const GET_EPISODES = gql`
 query {
     episodes(filter: {episode: "S04"}) {
           results {
@@ -16,7 +16,7 @@ query {
 `;
 
 function EpisodesList() {
-    const { loading, error, data } = useQuery(GET_LOCATIONS);
+    const { loading, error, data } = useQuery(GET_EPISODES);
     if (error) {
         return (
             <span className="episodes" id="episodes-list">Error occured while loading data</span>
@@ -37,11 +37,11 @@ function EpisodesList() {
     }
     return (
         <div>
-            <ul id="episodes-list">{listItems}</ul>
+            <ul id="episodes-list" aria-label="episodes">{listItems}</ul>
             <div id="vl"></div>
             <ul id="names-list">{names_list}</ul>
             <ul id="air-dates-list">{air_dates_list}</ul>
-            <ul id="hlines">{hlines}</ul>
+            <ul id="hlines">{hlines}</ul>   
         </div>
     )
 }
