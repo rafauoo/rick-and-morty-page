@@ -1,0 +1,133 @@
+.episodes {
+    margin-top: 74px;
+    font-family: Lato;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: left;
+    white-space: nowrap;
+    width: 91px;
+    height: 32px;
+    list-style-type: none;
+}
+@media only screen and (max-width: 900px) {
+    .episodes {
+        margin-top: 96px;
+        font-size: 18px;
+    }
+}
+
+.name {
+    margin-top: 74px;
+    text-align: left;
+    font-family: Lato;
+    height: 32px;
+    color: #00BDD4;
+    font-size: 25px;
+    font-weight: 700;
+    white-space: nowrap;
+    list-style-type: none;
+}
+.name:nth-child(even) {
+    color: #BDD800;
+}
+@media only screen and (max-width: 900px) {
+    .name {
+        margin-top: 66px;
+        height: 62px;
+        width: 346px;
+        font-size: 18px;
+    }
+}
+
+.air_date {
+    margin-top: 82px;
+    text-align: left;
+    height: 24px;
+    max-width: 300px;
+    font-family: Lato;
+    color: #959595;
+    white-space: nowrap;
+    font-size: 20px;
+    font-weight: 700;
+    list-style-type: none;
+}
+@media only screen and (max-width: 900px) {
+    .air_date {
+        margin-top: 110px;
+        height: 18px;
+        font-size: 15px;
+    }
+}
+
+#episodes-list {
+    position: absolute;
+    left: 1036px;
+    top: calc(231px - 74px);
+}
+
+@media only screen and (max-width: 900px) {
+    #episodes-list {
+        top: calc(703px - 96px);
+        left: calc(25 / 50 * (100vw - 362px));
+    }
+}
+
+#names-list {
+    position: absolute;
+    left: 1186px;
+    top: calc(231px - 74px);
+}
+@media only screen and (max-width: 900px) {
+    #names-list {
+        top: calc(738px - 66px);
+        left: calc(25 / 50 * (100vw - 362px));
+    }
+}
+
+#air-dates-list {
+    position: absolute;
+    left: 1186px;
+    top: calc(276px - 82px);
+}
+@media only screen and (max-width: 900px) {
+    #air-dates-list {
+        top: calc(774px - 110px);
+        left: calc(25 / 50 * (100vw - 362px));
+    }
+}
+
+#vl {
+    visibility: inherit;
+    position: absolute;
+    left: 1156.5px;
+    top: 214.5px;
+    border-left: 1px solid #D1D1D1;
+    height: 1060px;
+}
+@media only screen and (max-width: 900px) {
+    #vl {
+        visibility: hidden;
+        left: 0px;
+    }
+}
+
+.horizontal-line {
+    width: 362px;
+    border-top: 1px solid #D1D1D1;
+    margin-top: 128px;
+    list-style-type: none;
+}
+
+#hlines {
+    position: absolute;
+    left: 0px;
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 900px) {
+    #hlines {
+        visibility: inherit;
+        left: calc(25.5 / 50 * (100vw - 362px));
+        top: calc(813.5px - 128px);
+    }
+}

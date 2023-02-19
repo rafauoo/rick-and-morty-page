@@ -1,0 +1,20 @@
+#App {
+    overflow: hidden;
+    height: 1489px;
+    width: 100%;
+    max-width: 1920px;
+    overflow-x:auto;
+    position: relative;
+}
+/* @media only screen and (max-width: 1800px) {
+    #App {
+        width: 1800px
+    }
+} */
+@media only screen and (max-width: 900px) {
+    #App {
+        height: 2062px;
+    }
+}
+
+* { margin: 0; padding: 0;}
