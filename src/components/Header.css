@@ -1,5 +1,6 @@
 #header {
     background-color: #DAED49;
+    min-width: 1000px;
     position: absolute;
     max-width: 1920px;
     width: 100%;
@@ -8,6 +9,7 @@
 @media only screen and (max-width: 900px) { /* Screen which has a maximum width of 900px */
 
     #header {
+        min-width: 0;
         max-width: 900px;
         height: 71px;
     } 
