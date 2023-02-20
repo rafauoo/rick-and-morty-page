@@ -1,46 +1,58 @@
-.episodes {
-    margin-top: 74px;
+.episode-data {
+    list-style-type: none;
+    position: relative;
+    height: 106px;
+    width: 650px;
+}
+@media only screen and (max-width: 900px) {
+    .episode-data {
+        height: 128px;
+        width: 362px;
+    }
+}
+
+.episode-ep {
+    position: absolute;
     font-family: Lato;
     font-size: 25px;
     font-weight: 700;
     text-align: left;
-    white-space: nowrap;
-    width: 91px;
     height: 32px;
     list-style-type: none;
 }
 @media only screen and (max-width: 900px) {
-    .episodes {
-        margin-top: 96px;
+    .episode-ep {
         font-size: 18px;
     }
 }
 
-.name {
-    margin-top: 74px;
+.episode-name {
+    position: absolute;
+    left: 150px;
     text-align: left;
     font-family: Lato;
     height: 32px;
-    color: #00BDD4;
     font-size: 25px;
     font-weight: 700;
     white-space: nowrap;
     list-style-type: none;
 }
-.name:nth-child(even) {
-    color: #BDD800;
-}
+
 @media only screen and (max-width: 900px) {
-    .name {
-        margin-top: 66px;
+    .episode-name {
+        position: absolute;
+        top: 35px;
+        left: 0;
         height: 62px;
         width: 346px;
         font-size: 18px;
     }
 }
 
-.air_date {
-    margin-top: 82px;
+.episode-air-date {
+    position: absolute;
+    top: 45px;
+    left: 150px;
     text-align: left;
     height: 24px;
     max-width: 300px;
@@ -52,8 +64,9 @@
     list-style-type: none;
 }
 @media only screen and (max-width: 900px) {
-    .air_date {
-        margin-top: 110px;
+    .episode-air-date {
+        left: 0;
+        top: 71px;
         height: 18px;
         font-size: 15px;
     }
@@ -62,12 +75,12 @@
 #episodes-list {
     position: absolute;
     left: 1036px;
-    top: calc(231px - 74px);
+    top: 231px;
 }
 
 @media only screen and (max-width: 900px) {
     #episodes-list {
-        top: calc(703px - 96px);
+        top: calc(703px);
         left: calc(25 / 50 * (100vw - 362px));
     }
 }
