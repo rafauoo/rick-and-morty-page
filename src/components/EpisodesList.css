@@ -1,47 +1,65 @@
-.episodes {
-    margin-top: 74px;
+.episode-data {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: relative;
+    justify-content: flex-start;
+    height: 106px;
+    width: 650px;
+}
+@media only screen and (max-width: 900px) {
+    .episode-data {
+        flex-direction: column;
+        height: 128px;
+        width: 362px;
+    }
+}
+
+.episode-ep {
+    order: 1;
     font-family: Lato;
     font-size: 25px;
     font-weight: 700;
     text-align: left;
-    white-space: nowrap;
-    width: 91px;
     height: 32px;
     list-style-type: none;
 }
 @media only screen and (max-width: 900px) {
-    .episodes {
-        margin-top: 96px;
+    .episode-ep {
         font-size: 18px;
     }
 }
 
-.name {
-    margin-top: 74px;
+.episode-name {
+    order: 2;
+    margin-left: 64px;
+    margin-top: 0;
     text-align: left;
     font-family: Lato;
     height: 32px;
-    color: #00BDD4;
     font-size: 25px;
     font-weight: 700;
     white-space: nowrap;
+    min-width: 400px;
     list-style-type: none;
 }
-.name:nth-child(even) {
-    color: #BDD800;
-}
+
 @media only screen and (max-width: 900px) {
-    .name {
-        margin-top: 66px;
-        height: 62px;
+    .episode-name {
+        margin-left: 0;
+        margin-top: 2px;
+        left: 0;
         width: 346px;
         font-size: 18px;
     }
 }
 
-.air_date {
-    margin-top: 82px;
+.episode-air-date {
+    order: 3;
+    margin-left: 150px;
     text-align: left;
+    margin-top: 0;
     height: 24px;
     max-width: 300px;
     font-family: Lato;
@@ -52,8 +70,9 @@
     list-style-type: none;
 }
 @media only screen and (max-width: 900px) {
-    .air_date {
-        margin-top: 110px;
+    .episode-air-date {
+        margin-left: 0;
+        margin-top: 12px;
         height: 18px;
         font-size: 15px;
     }
@@ -62,12 +81,12 @@
 #episodes-list {
     position: absolute;
     left: 1036px;
-    top: calc(231px - 74px);
+    top: 231px;
 }
 
 @media only screen and (max-width: 900px) {
     #episodes-list {
-        top: calc(703px - 96px);
+        top: calc(703px);
         left: calc(25 / 50 * (100vw - 362px));
     }
 }
