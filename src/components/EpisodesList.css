@@ -1,18 +1,23 @@
 .episode-data {
     list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     position: relative;
+    justify-content: flex-start;
     height: 106px;
     width: 650px;
 }
 @media only screen and (max-width: 900px) {
     .episode-data {
+        flex-direction: column;
         height: 128px;
         width: 362px;
     }
 }
 
 .episode-ep {
-    position: absolute;
+    order: 1;
     font-family: Lato;
     font-size: 25px;
     font-weight: 700;
@@ -27,33 +32,34 @@
 }
 
 .episode-name {
-    position: absolute;
-    left: 150px;
+    order: 2;
+    margin-left: 64px;
+    margin-top: 0;
     text-align: left;
     font-family: Lato;
     height: 32px;
     font-size: 25px;
     font-weight: 700;
     white-space: nowrap;
+    min-width: 400px;
     list-style-type: none;
 }
 
 @media only screen and (max-width: 900px) {
     .episode-name {
-        position: absolute;
-        top: 35px;
+        margin-left: 0;
+        margin-top: 2px;
         left: 0;
-        height: 62px;
         width: 346px;
         font-size: 18px;
     }
 }
 
 .episode-air-date {
-    position: absolute;
-    top: 45px;
-    left: 150px;
+    order: 3;
+    margin-left: 150px;
     text-align: left;
+    margin-top: 0;
     height: 24px;
     max-width: 300px;
     font-family: Lato;
@@ -65,8 +71,8 @@
 }
 @media only screen and (max-width: 900px) {
     .episode-air-date {
-        left: 0;
-        top: 71px;
+        margin-left: 0;
+        margin-top: 12px;
         height: 18px;
         font-size: 15px;
     }
