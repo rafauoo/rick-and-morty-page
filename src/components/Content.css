@@ -10,19 +10,6 @@
     }
 }
 
-#cover {
-    position: relative;
-    width: 50%;
-    max-width: 960px;
-    float: left;
-}
-
-#list {
-    width: 50%;
-    max-width: 960px;
-    float: right;
-}
-
 #h1-text {
     position: absolute;
     left: 197px;
